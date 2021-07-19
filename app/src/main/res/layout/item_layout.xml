@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="#ccc">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apiDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvDate"
+        app:layout_constraintTop_toTopOf="@id/tvDate" />
+
+    <TextView
+        android:id="@+id/tvPositive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Positive: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+    <TextView
+        android:id="@+id/apiPositive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvPositive"
+        app:layout_constraintTop_toTopOf="@id/tvPositive" />
+
+
+    <TextView
+        android:id="@+id/tvNegative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Negative: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPositive" />
+
+    <TextView
+        android:id="@+id/apiNegative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvNegative"
+        app:layout_constraintTop_toTopOf="@id/tvNegative" />
+
+    <TextView
+        android:id="@+id/tvhospitalizedCurrently"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospitalized Currently: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNegative" />
+
+    <TextView
+        android:id="@+id/apihospitalizedCurrently"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvhospitalizedCurrently"
+        app:layout_constraintTop_toTopOf="@id/tvhospitalizedCurrently" />
+
+    <TextView
+        android:id="@+id/tvonVentilatorCurrently"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="on Ventilator Currently: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvhospitalizedCurrently" />
+
+    <TextView
+        android:id="@+id/apionVentilatorCurrently"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvonVentilatorCurrently"
+        app:layout_constraintTop_toTopOf="@id/tvonVentilatorCurrently" />
+
+    <TextView
+        android:id="@+id/tvDeath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Death: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvonVentilatorCurrently" />
+
+    <TextView
+        android:id="@+id/apiDeath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvDeath"
+        app:layout_constraintTop_toTopOf="@id/tvDeath" />
+
+    <TextView
+        android:id="@+id/tvDateCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Check: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDeath" />
+
+    <TextView
+        android:id="@+id/apiDateCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvDateCheck"
+        app:layout_constraintTop_toTopOf="@id/tvDateCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
